@@ -1,0 +1,12 @@
+name: 'Deploy to Public Repo Without History'
+description: 'Deploys to a public repository without commit history.'
+inputs:
+  target_repo: # The full URL of the target repository
+    description: 'The URL of the repository to deploy to (e.g., https://github.com/username/username.github.io.git)'
+    required: true
+  # source_dir: # Optional: The directory to publish (defaults to '.')
+  #   description: 'The directory containing the files to deploy'
+  #   default: '.'
+runs:
+  using: 'node16'
+  main: 'index.js'
